@@ -135,29 +135,8 @@ endmodule
 
 ---
 
+
 ### Lab 4
-
-Verilog code:
-
-```verilog
-module opt_check4 (input a , input b , input c , output y);
- assign y = a?(b?(a & c ):c):(!c);
- endmodule
-```
-
-**Functionality:**
-- Three inputs (`a`, `b`, `c`), output `y`.
-- Nested ternary logic:
-  - If `a = 1`, `y = c`.
-  - If `a = 0`, `y = !c`.
-- Logic simplifies to:  
-  `y = a ? c : !c`
-
-![Lab 4 Output](https://github.com/user-attachments/assets/08d1e447-78c6-47c4-8c99-239645b38617)
-
----
-
-### Lab 5
 
 Verilog code:
 
@@ -178,11 +157,11 @@ endmodule
   - Asynchronous reset to 0
   - Loads constant `1` when not in reset
 
-![Lab 5 Output](https://github.com/user-attachments/assets/a42fac06-a092-4efc-be39-33b263caaaa1)
+![Alt Text](seq1.png)
 
 ---
 
-### Lab 6
+### Lab 5
 
 Verilog code:
 
@@ -201,7 +180,7 @@ endmodule
 **Functionality:**
 - D flip-flop always sets output `q` to `1` (regardless of reset or clock).
 
-![Lab 6 Output](https://github.com/user-attachments/assets/ae45f7db-0a7f-4256-b43b-01cc4a1588f7)
+![Alt Text](seq2.png)
 
 ---
 
