@@ -32,7 +32,6 @@ Constant propagation analyzes the design code to identify variables with constan
 - **Performance Improvement:** Faster execution and reduced delays.
 - **Resource Optimization:** Fewer gates or flip-flops required.
 
-![Constant Propagation Example](https://github.com/user-attachments/assets/d7f06056-66c1-44af-99a8-623fdf5879be)
 
 ---
 
@@ -59,7 +58,7 @@ Cloning duplicates a logic cell or module to optimize performance, reduce power,
 - Place and route the cloned cell.
 - Verify improvement via timing and power analysis.
 
-![Cloning Example](https://github.com/user-attachments/assets/6bdd2c12-02a2-4ea5-895c-98e349b93bac)
+
 
 ---
 
@@ -97,7 +96,7 @@ Follow the steps from [Day 1 Synthesis Lab](https://github.com/Ahtesham18112011/
 opt_clean -purge
 ```
 
-![Lab 1 Output](https://github.com/user-attachments/assets/4d224d8d-f6f5-4a37-9732-ab570b64e31e)
+![Alt Text](comb1.png)
 
 ---
 
@@ -116,7 +115,7 @@ endmodule
   - `y = 1` if `a` is true.
   - `y = b` if `a` is false.
 
-![Lab 2 Output](https://github.com/user-attachments/assets/59545745-8a8b-4afd-b4d5-0a3ad1d5b80e)
+![Alt Text](comb2.png)
 
 ---
 
@@ -126,14 +125,13 @@ Verilog code:
 
 ```verilog
 module opt_check2 (input a , input b , output y);
-	assign y = a?1:b;
+	assign y = a?(c?b:0):0;
 endmodule
 ```
 
-**Functionality:**  
-2-to-1 multiplexer; `y = a ? 1 : b` (outputs `1` when `a` is true, otherwise `b`).
 
-![Lab 3 Output](https://github.com/user-attachments/assets/157b16d3-cecd-441a-aacf-bae296910886)
+
+![Alt Text](comb3.png)
 
 ---
 
