@@ -105,7 +105,7 @@ To open the sky130_fd_sc_hd__tt_025C_1v80.lib file:
 
 **Example:**
 
-![Alt Text](flattened.png)
+![Alt Text](flatt.png)
 
 > **Important:** Hierarchical synthesis maintains sub-modules in the design, while flattening produces a netlist from the ground up.
 
@@ -186,7 +186,7 @@ endmodule
    ```shell
    gtkwave tb_dff_asyncres.vcd
    ```
-![Screenshot_2025-05-30_10-45-13](https://github.com/user-attachments/assets/1176581e-fd6c-4b71-8af5-5d7d5f6dbcda)
+
 
 
 ### Synthesis with Yosys
@@ -219,7 +219,7 @@ endmodule
    ```shell
    show
    ```
-![Screenshot_2025-05-30_11-03-00](https://github.com/user-attachments/assets/fa8337df-e0ec-4b01-9b18-5910768e4421)
+![Alt Text](flattened.png)
 
 
 ---
